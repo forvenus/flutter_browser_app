@@ -699,7 +699,12 @@ class _WebViewTabAppBarState extends State<WebViewTabAppBar>
 
           return items;
         },
-      )
+      ),
+      IconButton(
+          icon: const Icon(Icons.share),
+          onPressed: () {
+            share();
+          })
     ];
   }
 
